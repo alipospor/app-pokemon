@@ -5,7 +5,7 @@ import { PoModule } from '@po-ui/ng-components';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PokemonsListModule } from './pokemons/pokemons-list/pokemons-list.module';
+import { PokemonsListModule } from './modules/pokemons/pokemons-list/pokemons-list.module';
 
 @NgModule({
   declarations: [
