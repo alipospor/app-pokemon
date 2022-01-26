@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { PoModule } from '@po-ui/ng-components';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PokemonsListModule } from './pokemons/pokemons-list/pokemons-list.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PoModule,
+    RouterModule.forRoot([]),
+    PokemonsListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

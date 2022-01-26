@@ -1,0 +1,7 @@
+<po-list-view [p-items]="pokemons.results">
+    <ng-template p-list-view-content-template let-item>
+        <app-pokemons-card
+            [pokemon]="item">
+        </app-pokemons-card>
+    </ng-template>
+</po-list-view>
