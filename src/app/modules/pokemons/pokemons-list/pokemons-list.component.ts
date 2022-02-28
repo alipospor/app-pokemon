@@ -18,8 +18,7 @@ export class PokemonsListComponent implements OnInit {
   ngOnInit(): void {
     this.service.getPokemons().subscribe({
       next: (dados) => { this.pokemons = dados.results; },
-      error: (erro) => { console.log(erro) },
-      complete: () => { console.log('complete') }
+      error: (erro) => { console.log(erro) }
     });
   }
 

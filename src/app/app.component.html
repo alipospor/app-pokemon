@@ -1,13 +1,17 @@
 <div class="po-wrapper">
-  <po-menu 
-    [p-menus]="menus"
+  <po-toolbar
+    #toolbar
+    p-title="PokemonPO"
+  >
+  </po-toolbar>
+  <!-- [p-profile]="" -->
+  <po-menu
+    #menu
+    [p-menus]="itensMenu"
     [p-collapsed]="true"
+    [p-filter]="true"
   >
   </po-menu>
-  <!-- <po-toolbar p-title="AppName"></po-toolbar> -->
-
-
-  <po-page-default p-title="AppName">
-    <app-pokemons-list> </app-pokemons-list>
-  </po-page-default>
+  
+  <router-outlet></router-outlet>
 </div>

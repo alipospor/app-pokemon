@@ -15,8 +15,8 @@ import { PokemonsListModule } from './modules/pokemons/pokemons-list/pokemons-li
     BrowserModule,
     AppRoutingModule,
     PoModule,
-    RouterModule.forRoot([]),
-    PokemonsListModule
+    PokemonsListModule,
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]

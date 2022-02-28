@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { PoListViewModule, PoTableModule } from '@po-ui/ng-components';
+import { PoListViewModule, PoPageModule, PoTableModule } from '@po-ui/ng-components';
 
 import { PokemonsCardModule } from '../pokemons-card/pokemons-card.module';
 import { PokemonsListComponent } from './pokemons-list.component';
@@ -11,7 +11,8 @@ import { PokemonsListComponent } from './pokemons-list.component';
     CommonModule,
     PoListViewModule,
     PokemonsCardModule,
-    PoTableModule
+    PoTableModule,
+    PoPageModule
   ],
   exports: [PokemonsListComponent]
 })
